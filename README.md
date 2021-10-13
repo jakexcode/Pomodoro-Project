@@ -2,6 +2,12 @@
 
 #
 # Pomodoro-Project
-- The Pomodoro timer is a tool that can be used to keep track of time spent studying with an adjustible break schedule that can customized
-to your liking
+* The Pomodoro timer is a tool that can be used to keep track of time spent studying with an adjustible break schedule for optimal studying intervals.
+
+## SKILLS USED 
+* JavaScript
+* React
+* HTML
+* CSS
+* Bootstrap
 
