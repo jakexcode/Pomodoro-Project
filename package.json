@@ -1,5 +1,6 @@
 {
   "name": "pomodoro-timer",
+  "homepage": "https://jakexcode.github.io/Pomodoro-Project/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,11 +13,13 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "docker:build": "docker image build . -t thinkful-ed/zid-fe-project-pomodoro-timer-01-qualified",
     "docker:run": "docker run --rm -it -p 3000:3000 thinkful-ed/zid-fe-project-pomodoro-timer-01-qualified",
     "docker:stop": "docker stop $(docker ps -q)",
     "docker:test": "docker run -t  thinkful-ed/zid-fe-project-pomodoro-timer-01-qualified npm test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "start": "react-scripts --openssl-legacy-provider start",
     "start:solution": "npm run -it docker:build && npm run docker:run",
