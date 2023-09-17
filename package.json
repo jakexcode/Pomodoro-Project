@@ -17,7 +17,7 @@
     "docker:stop": "docker stop $(docker ps -q)",
     "docker:test": "docker run -t  thinkful-ed/zid-fe-project-pomodoro-timer-01-qualified npm test",
     "eject": "react-scripts eject",
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "react-scripts test",
     "test:solution": "npm run docker:build && npm run docker:test"
